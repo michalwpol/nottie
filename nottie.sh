@@ -1,5 +1,17 @@
 #!/bin/bash
 
+# Lista używanych funkcji
+#-----------------------------------------------------------------
+# help()                          - Funkcja pomocy
+# add_timestamp()                 - Funkcja dodająca znacznik czasu
+# create_today_file_if_missing()  - Funkcja tworzenia pliku, jeśli nie istnieje, z wbudowanym szablonem
+# mark_task_done()                - Funkcja oznaczania zadania jako wykonane
+# search_all_notes()              - Funkcja przeszukiwania notatek po słowach kluczowych we wszystkich plikach
+# search_last_week_notes()        - Funkcja przeszukiwania notatek z ostatniego tygodnia
+# search_uncompleted_tasks()      - Funkcja przeszukiwania niezrobionych zadań i formatowania wyjścia
+# get_next_task_number()          - Funkcja generująca unikalny numer zadania
+#-----------------------------------------------------------------
+
 # Ścieżki
 notes_dir="$HOME/.nottie"
 today_file="$notes_dir/$(date +'%Y-%m-%d').md"
